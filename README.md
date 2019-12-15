@@ -12,7 +12,20 @@ This project is divided into 3 parts.
 2. [Serve](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/tree/master/serve)
 3. [Website](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/tree/master/website)
 
-Our website is a simple HTML page running on a python micro web framework. You can see the website [here](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/blob/master/website/index.html).
+#### Website
+Our website is a simple HTML page running on a python micro web framework. You can see the website [here](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/blob/master/website/index.html). In the last <div> of the html file, where  the form method is POST, I replaced the "action" text "*REPLACE WITH PUBLIC API URL*" with my API endpoint. Since i dont have the project active anymore, I removed the Public API link and reverted the text back to "*REPLACE WITH PUBLIC API URL*"
 
-For the training part of the problem, I trained the given data using two files; [model.py](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/blob/master/train/model.py) and [train.py](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/blob/master/train/train.py).
+#### Training
+For the training part of the problem, I trained the given data using two files; [model.py](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/blob/master/train/model.py) and [train.py](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/blob/master/train/train.py). 
+
+Model.py contains the code for LSTMClassifier model built using PyTorch.
+
+Train.py contains the training code developed in the [Jupyter notebook](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/blob/master/SageMaker%20Project.ipynb).
+
+#### Serving
+After the data was trained using train.py code, the model needs to serve the predicted values. This is performed by the [predict.py](https://github.com/mohammadjafri1992/SentimentAnalysisWebApp/blob/master/serve/predict.py) file.
+
+I would highly recommend to look at the files to see the comments and other code annotations, line-by-line. That would make much more sense rather than just reading about it here.
+
+
 

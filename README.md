@@ -27,5 +27,6 @@ After the data was trained using train.py code, the model needs to serve the pre
 
 I would highly recommend to look at the files to see the comments and other code annotations, line-by-line. That would make much more sense rather than just reading about it here.
 
-
+### Disclaimer
+It is website is available as an open source with MIT license. To reiterate, the code is provided AS-IS. I am not responsible for any loss/damage caused by the code to your hardware, software or business in any shape or form. This code is provided for educational purpose ONLY and must not be taken as a business proposal. Running this code on AWS will incurr charges.
 
